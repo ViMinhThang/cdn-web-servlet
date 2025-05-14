@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+    --margin-left-standard: 145px;
+    --margin-bottom-small: 6px;
+    --margin-left-medium: 75px;
+    --font-size-standard: 20px;
+    --width-big: 929px;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+/* ---------------------------------------------------------------- */
+#section_slider {
+
+}
+
+#carouselExampleIndicators {
+    margin-top: 5%;
+    width: 100%;
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+}
+
+.carouselExample {
+    width: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.carouselExample::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -5%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(211, 211, 211);
+}
+
+/*
+.line {
+  background-color: rgb(183, 183, 183);
+  height: 1px;
+  width: 1400px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* ------------------------------------------------------------------- */
+.button__More {
+    position: relative;
+    letter-spacing: -1px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: 1px black solid;
+    line-height: 2.0;
+    width: 18rem;
+    transition: 0.6s all, color 0.6s ease;
+
+}
+
+.button__More:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ---------------------------------------------- */
+#section_newarrival {
+    width: 1400px;
+    margin: 0 auto;
+    /* Căn giữa section */
+}
+
+#section_newarrival .cardWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#carouselExampleControls2 {
+}
+
+/* #carouselExampleControls2 .carouselInner {
+  display: flex;
+  justify-content: center;
+} */
+
+/* #section_newarrival .left__content .title__NewArrival {
+  font-size: 5px;
+} */
+/* #section_newarrival {
+  width: 1300px;
+  margin: 0 auto;
+} */
+
+/* --------------------------------------------------- */
+.carousel-inner img {
+    width: 100vw; /* Chiều rộng 100% của viewport */
+    height: auto; /* Giữ tỉ lệ ảnh */
+    object-fit: cover; /* Đảm bảo ảnh bao phủ mà không bị méo */
+}
+
+.hover--black {
+    border: 2px solid transparent; /* Mặc định không có viền */
+}
+
+.hover--black:hover {
+    border: 2px solid black !important; /* Khi hover vào sẽ có viền đen */
+}
+
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.right__content {
+    align-items: center;
+}
+
+.event__banner img {
+    height: 160px;
+    width: 1400px;
+    display: flex;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------------------------- */
+.collection__component .collection__title {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.collection__component .column__1 {
+    width: 500px;
+    display: flex;
+    margin-right: auto;
+}
+
+.collection__component .collection__container {
+    width: 1400px;
+    margin-inline: auto;
+}
+
+.box img {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.box {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.box div {
+    position: absolute;
+    opacity: 0%;
+    height: 98.5%;
+    width: 100%;
+    background-color: black;
+    transition: opacity 0 ease-out;
+}
+
+.box:hover div {
+    opacity: 60%;
+    transition: all 0.9s;
+}
+
+.box:not(:hover) div {
+    opacity: 0%;
+    transition: all 0.9s;
+}
+
+.box span {
+    opacity: 0;
+    top: 23rem;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+
+.box:hover span {
+    opacity: 100;
+    transform: scale(1.2);
+    transition: all 0.9s;
+}
+
+.box:not(:hover) span {
+    transition: all 0.9s;
+}
+
+.longbox {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.longbox div {
+    position: absolute;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.9s;
+    background-color: black;
+}
+
+.longbox:hover div {
+    opacity: 60%;
+    transition: all 0.9s;
+}
+
+.longbox:not(:hover) div {
+    opacity: 0%;
+    transition: all 0.9s;
+}
+
+.longbox span {
+    opacity: 0;
+    top: 18rem;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+
+.longbox:hover span {
+    opacity: 100;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.longbox:not(:hover) span {
+    transition: all 0.9s;
+}
+
+.collection__component .longbox img {
+    width: 100%;
+}
+
+.mostPopular__component {
+    width: 1400px;
+    margin-inline: auto;
+}
+
+.mostPopular__title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#carouselExampleControls3 {
+    width: 1400px;
+}
+
+#carouselExampleControls3 .cardWrapper {
+    margin-inline: auto;
+}
+
+#carouselExampleControls3 .card {
+    width: 21rem;
+}
+
+#carouselExampleControls3 a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------ */
+.nav__Tab .nav__Link {
+    border: none;
+    border-radius: 0;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav__Tab .nav__Link.active {
+    color: #000;
+    transform: scaleX(1);
+}
+
+.nav__Tab .nav__Link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+
+.nav__Tab .nav__Link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    transition: all 1s ease;
+}
+
+.nav__Tab .nav__Link:hover::after,
+.nav__Tab .nav__Link.active::after {
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------------- */
+.tabEvent {
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+#list__product__row .product__card {
+    color: rgb(31, 31, 31);
+    transition: 0.2s cubic-bezier(0.345, 0.115, 0.135, 1.42), opacity 0.15s ease-out, border-color 0.2s ease-out;
+}
+
+.list__product .product__card:hover {
+    transform: scale(1.05);
+}
+
+.seeMore {
+    margin-top: 1rem;
+    font-size: 22px;
+    width: 500px;
+    height: 45px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: all 0.6s;
+    margin-inline: auto;
+    border-radius: 0px;
+}
+
+.seeMore:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1);
+}
+
+
+/* ------------------------------------------------------------------ */
+.spotlight__component {
+    margin-top: 2%;
+    background-color: rgb(240, 240, 240);
+    color: rgb(26, 26, 26);
+}
+
+.spotlight__title1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.spotlight__title2 {
+    margin-top: -1%;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.spotlight__row {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-inline: auto;
+}
+
+.spotlight__component .box {
+    height: 400px;
+    width: 326px;
+    /* background-color: rgb(208, 208, 208); */
+    margin-bottom: 2rem;
+}
+
+.event__banner2 img {
+    height: 160px;
+    width: 1400px;
+    display: flex;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------------------------------------------------------ */
+.footer .social-icons .icon img {
+    width: 37px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.footer .social-icons .icon:hover img {
+    transform: scale(1.2);
+    filter: brightness(0.7) saturate(1.5);
+}
+
+.border-tag {
+    border: 2px solid black;
+    padding: 2px 5px;
+}
+
+.carousel-indicators-line {
+    height: 6px;
+    background-color: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    max-width: 1681px;
+    margin: 0 auto;
+}
+
+.carousel-indicators-line .indicator-segment {
+    flex: 1;
+    background-color: #efefef;
+    cursor: pointer;
+    height: 100%;
+}
+
+.carousel-indicators-line .indicator-segment.active {
+    background-color: #000000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M11 1L3 8l8 7V1z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M5 1l8 7-8 7V1z'/%3E%3C/svg%3E");
+}
+
+.circle-banner {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

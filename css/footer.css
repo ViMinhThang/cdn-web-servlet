@@ -1,0 +1,17 @@
+.footer .social-icons .icon img {
+    width: 37px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Tạo hiệu ứng mượt khi hover */
+}
+
+.footer .social-icons .icon:hover img {
+    transform: scale(1.2); /* Phóng to icon khi hover */
+    filter: brightness(0.7) saturate(1.5); /* Tăng độ sáng và độ bão hòa */
+}
+p {
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+.footer p:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+}

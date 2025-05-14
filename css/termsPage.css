@@ -1,0 +1,33 @@
+
+
+.custom_ref{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-align: right;
+  padding: 12px;
+  border-radius: 5px;
+}
+.custom_ref:hover{
+  background-color: black;
+  color: white;
+}
+.content {
+  font-size: 21px;
+}
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: #efefef;
+  height: 2.3rem;
+  align-items: center;
+  font-size: 17px;
+}
+
+.breadcrumb-item a {
+  color: #6c757d;
+  margin-left: 3rem;
+}
+
+.breadcrumb-item.active {
+  color: #1c1c1c;
+}

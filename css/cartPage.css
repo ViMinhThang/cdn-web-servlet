@@ -1,0 +1,79 @@
+
+.custom_margin--container {
+  margin-left: 148.5px;
+  margin-right: 148.5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.form-select {
+  border-radius: 0px;
+}
+.form-select:focus {
+  /*box-shadow: none;*/
+}
+.custom_button {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px;
+}
+.btn-dark {
+  border-radius: 0px;
+}
+.custom_input--btn-group__input {
+  border-radius: 24px 0 0 24px;
+  appearance: none;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px inset #0e0e0e17;
+  border-color: #949494;
+  color: #222;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
+  outline: 3px solid #0000;
+  height: 48px;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.7;
+  transition: border 0.2s ease-out, background 0.2s ease-out;
+}
+.custom_input--btn-group__input:focus {
+  border-color: #222;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3b67d9;
+}
+.card-wrapper {
+
+  display: flex;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.remove_button{
+  cursor: pointer;
+}
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: #efefef;
+  height: 2.3rem;
+  align-items: center;
+  font-size: 17px;
+}
+
+.breadcrumb-item a {
+  color: #6c757d;
+  margin-left: 3rem;
+}
+
+.breadcrumb-item.active {
+  color: #1c1c1c;
+}
+
+.option_select {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid black;
+}

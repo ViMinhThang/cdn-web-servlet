@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+    --margin-left-standard: 145px;
+    --margin-bottom-small: 6px;
+    --margin-left-medium: 75px;
+    --font-size-standard: 20px;
+    --width-big: 929px;
+}
+
+* {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    top: 0;
+}
+
+.dropdown-item {
+    padding: 10px !important;
+}
+
+#logo {
+    color: black;
+    margin-left: 3rem;
+    font-size: 40px;
+    font-family: Instrument Serif;
+    letter-spacing: 13px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    padding-bottom: 0;
+}
+
+.navbar {
+    border-bottom: 1px solid #efefef;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navitem__group a {
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: black;
+    padding: 2px;
+    align-items: end;
+    font-weight: 500;
+}
+
+.navitem__group {
+    gap: 40px;
+}
+
+/* ------------------------------------------- */
+/*.header__icon__group {*/
+/*  display: flex; !* Sử dụng Flexbox *!*/
+/*  align-items: center; !* Căn giữa các icon theo trục dọc *!*/
+/*  justify-content: space-between; !* Phân phối đều các icon *!*/
+/*  gap: 20px; !* Khoảng cách giữa các icon *!*/
+/*  width: 100%; !* Đảm bảo nhóm icon chiếm toàn bộ không gian *!*/
+/*  max-width: 200px; !* Giới hạn chiều rộng tối đa nếu cần *!*/
+/*}*/
+
+/* Các icon chung */
+.nav-item {
+    padding-bottom: 3px;
+}
+
+/*!* Icon cụ thể *!*/
+/*.nav-icon {*/
+/*  width: 26px; !* Chiều rộng cố định của icon *!*/
+/*  height: 26px; !* Chiều cao cố định của icon *!*/
+/*  cursor: pointer; !* Thêm hiệu ứng con trỏ *!*/
+/*}*/
+
+/*!* Search container *!*/
+/*.search__container {*/
+/*  display: flex; !* Sử dụng Flexbox cho thanh tìm kiếm *!*/
+/*  align-items: center;*/
+/*  border: 1px solid #ddd;*/
+/*  border-radius: 20px;*/
+/*  overflow: hidden;*/
+/*  max-width: 150px; !* Giới hạn kích thước nếu cần *!*/
+/*}*/
+
+/*.search__input {*/
+/*  flex: 1; !* Để input chiếm toàn bộ không gian trống *!*/
+/*  padding: 6px 10px;*/
+/*  border: none;*/
+/*  outline: none;*/
+/*}*/
+
+/*.search__button {*/
+/*  background-color: #007bff;*/
+/*  color: #fff;*/
+/*  border: none;*/
+/*  padding: 6px 10px;*/
+/*  cursor: pointer;*/
+/*}*/
+/* ------------------------------------------- */
+
+
+.header__icon__group {
+    display: flex;
+    gap: 20px;
+
+}
+
+.header__icon__group .favorite:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+
+.header__icon__group .user:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.header__icon__group .cart:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+/* -------------------------------------------------- */
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu:hover {
+    display: block;
+}
+
+#search__icon {
+    cursor: pointer;
+}
+
+.nav-icon {
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar_nav {
+}
+
+.product__col {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.header__icon__group {
+    margin-bottom: 3px;
+    display: flex;
+    gap: 20px;
+}
+
+.favorite {
+    position: relative;
+    text-decoration: none;
+}
+
+.hover--black {
+    border: 2px solid white !important; /* Khi hover vào sẽ có viền đen */
+}
+
+.hover--black:hover {
+    border: 2px solid black !important; /* Khi hover vào sẽ có viền đen */
+}
+
+.favorite__count {
+    position: absolute;
+    top: -1px;
+    right: -6px;
+    font-size: 12px;
+    display: inline-block;
+    color: black;
+    background: #ffeb00;
+    border-radius: 50%;
+    width: 18px;
+    text-align: center;
+}
+
+
+/* Hiển thị menu khi hover */
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* Đảm bảo menu xuất hiện sát đối tượng */
+}
+
+/* Đảm bảo sự chuyển động mượt mà */
+.dropdown-menu {
+    margin-left: -1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.cart {
+    position: relative;
+    text-decoration: none;
+}
+
+.cart__count {
+    position: absolute;
+    top: -1px;
+    right: -6px;
+    font-size: 12px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 50%;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 20%;
+    background: white;
+    transition: left 0.5s ease;
+    z-index: 1000;
+}
+
+.overlay.active {
+    left: 0;
+}
+
+.overlay2 {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 45%;
+    background: white;
+    transition: right 0.5s ease;
+    z-index: 1000;
+}
+
+.overlay2.active {
+    right: 0;
+}
+
+.dimmer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.dimmer.active {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+.dimmer2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.dimmer2.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.custom_design {
+    border: 2.5px solid black;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+}
+
+#closeButton2 {
+    position: absolute;
+    top: 10px;
+    left: -70px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* 
+.footer {
+  margin-top: 30px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 467px;
+}
+
+.footer--section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer--section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer--section p {
+  font-size: var(--font-size-standard);
+
+  color: #555;
+  line-height: 51px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+} */
+.cart--inputCoupon:focus {
+    border-color: #222;
+    height: 48px;
+}
